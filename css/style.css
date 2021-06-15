@@ -13,6 +13,8 @@ html{
     -webkit-text-size-adjust: 100%;
 }
 
+/* Navegador Princial */
+
 header{
     display: block;
     z-index: 1999;
@@ -52,6 +54,11 @@ header{
     text-decoration: none!important;
     color: rgb(255, 255, 255);
 }
+
+.logoLink:hover{
+    color: #fd680e;
+}
+
 
 h2{
     margin: 0px;
@@ -128,6 +135,8 @@ a{
     background: #fff;
     box-sizing: border-box;
 }
+
+/* Sección Heroe */
 
 .hero{
     height: 100vh;
@@ -218,6 +227,11 @@ p{
     transition-delay: 0s;
 }
 
+.boton:hover {
+    background-color: #fd6a0e00;
+    border-color:rgb(255, 255, 255);
+    box-sizing: border-box;
+}
 
 .sinFondo{
     text-transform: uppercase;
@@ -228,22 +242,7 @@ p{
     background-color: transparent;
 }
 
-.boton:hover {
-    background-color: #fd6a0e00;
-    border-color:rgb(255, 255, 255);
-    box-sizing: border-box;
-}
-
-.logoLink:hover{
-    color: #fd680e;
-}
-
-@media (min-width: 1200px){
-    .container{
-        max-width: 1140px;
-        
-    }
-}
+/* Sección Torneos */
 
 .row2{
     display: flex;
@@ -348,11 +347,25 @@ h3{
     text-align: -webkit-match-parent;
 }
 
+/* Sección Noticas */
+
 .noticias{
     padding: 100px 0;
 }
 
-.ultimasNoticias{
+.seccionTitular{
+    margin-bottom: 30px;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.titular{
     color: #fff;
     font-size: 20px;
     position: relative;
@@ -362,7 +375,7 @@ h3{
     margin-bottom: 0.5rem;
 }
 
-.ultimasNoticias::before{
+.titular::before{
     position: absolute;
     content: "";
     width: 10px;
@@ -372,3 +385,108 @@ h3{
     background: #fd680e;
 }
 
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+
+.rowNoticias{
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.noticiaAnterior{
+    padding-right: 0;
+    padding-left: 0;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    -webkit-box-flex: 0;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+
+.posteo{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.posteo::before{
+    content: "";
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s all ease;
+    background-color: #ee1e46;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.imgNoticias{
+    transition: .3s all ease;
+    transform: scale(1);
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none; 
+}
+
+.textoNoticia{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.textoNoticia::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .3s all ease;
+    background: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+.tituloNoticia{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.h3Noticia{
+    font-size: 1.17em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+        
+    }
+}
