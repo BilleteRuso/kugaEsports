@@ -488,5 +488,25 @@ h3{
     .container{
         max-width: 1140px;
         
-    }
+    } 
 }
+
+/* Cuando doy distintas medidas para que el contenido se ajuste de acuerdo al width 
+    el contenido toma como referencia el width mas chico y se setea de acuerdo a esas dimensiones */
+
+    /* @media (min-width: 900px){
+    .container{
+        max-width: 860px;
+        
+    }
+    /* @media (min-width: 660px){
+    .container{
+        max-width: 620px;
+        
+    }
+    /* @media (min-width: 400px){
+    .container{
+        max-width: 360px;
+        
+    }
+} */
