@@ -77,6 +77,12 @@ html{
     transition-delay: 0s;
     cursor: pointer;
     color: rgb(255, 255, 255);
+    position: fixed;
+}
+
+.esport{
+    position: fixed;
+    margin-left: 115px;
 }
 
 .logoLink{
@@ -104,8 +110,8 @@ h2{
 nav{
     text-align: right !important;
     position: relative !important;
-    
 }
+
 
 ul{
     margin-top: 0;
@@ -123,6 +129,7 @@ ul{
 .navLi{
     display: inline-block;
     box-sizing: border-box;
+
 }
 
 a{
@@ -171,12 +178,36 @@ a{
     height: 100vh;
     min-height: 500px;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
+    position: initial;
+    z-index: 10;
 }
+.hero1{
+    height: 145vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: initial;
+    z-index: 10;
+}
+.hero2{
+    height: 145vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: initial;
+    z-index: 10;
+    background-color: rgba(255,255,255,.7);
+    transform: translate(0%, 10%);
+}
+
 
 .hero.overlay::before {
     content: "";
-    position: absolute;
+    position: fixed;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
@@ -189,20 +220,17 @@ a{
     min-height: 500px;
     -webkit-box-align: center!important;
     align-items: center!important;
-    display: flex;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    position: fixed;
 }
 
 .col{
-    margin-left: auto!important;
+    margin-left: 70%;
+    margin-top: 17%;
     -webkit-box-flex: 0;
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-    position: relative;
+    max-width: 50%;
     width: 100%;
-    min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -271,6 +299,35 @@ p{
     background-color: transparent;
 }
 
+/* Contador de reloj */
+#cuenta {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 32px;
+}
+
+.simply-section {
+	background: rgba(255, 255, 255, 0);
+	margin: 0 40px 0 0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 45px;
+	font-weight:300;
+    margin-bottom: -10px;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 16px;    
+}
+
+
 /* Sección Torneos */
 
 .row2{
@@ -307,15 +364,22 @@ p{
 }
 
 .puntaje{
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    z-index: 2;
-    letter-spacing: .2em;
+    transform: rotate(90deg);
+    transform: translate(20%, 0%);
+    align-self: flex-end;
+    position: sticky;
+    top: 80px;
+}
+
+.flecha{
+    max-width: 56px;
+    max-height: 56px;
+    margin-right: -30px;
+}
+.flecha2{
+    max-width: 56px;
+    max-height: 56px;
+    transform: rotate(180deg);
 }
 
 .team1{
@@ -446,19 +510,9 @@ h3{
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-}
-
-.posteo::before{
-    content: "";
-    width: 0;
-    height: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: .3s all ease;
-    background-color: #ee1e46;
-    z-index: 2;
-    box-sizing: border-box;
+    max-height: 520px;
+    margin-bottom: 0px;
+    padding-bottom: 0px ;
 }
 
 .imgNoticias{
@@ -477,10 +531,9 @@ h3{
     right: 0;
     bottom: 0;
     z-index: 1;
-    box-sizing: border-box;
 }
 
-.textoNoticia::before{
+/* .textoNoticia::before{
     content: "";
     position: absolute;
     top: 0;
@@ -491,7 +544,7 @@ h3{
     transition: .3s all ease;
     background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-}
+} */
 
 .tituloNoticia{
     position: absolute;
@@ -514,31 +567,4 @@ h3{
 }
 
 
-
-#cuenta {
-	display: flex;
-	justify-content: flex-start;
-	margin-bottom: 32px;
-}
-
-.simply-section {
-	background: rgba(255, 255, 255, 0);
-	margin: 0 40px 0 0;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.simply-amount {
-	display: block;
-	font-size: 45px;
-	font-weight:300;
-    margin-bottom: -10px;
-}
-
-.simply-word {
-	font-weight: 300;
-	font-size: 16px;    
-}
 
