@@ -13,24 +13,53 @@ html{
     -webkit-text-size-adjust: 100%;
 }
 
+@media (min-width: 1200px) {
+    .container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+    }
+}
+
+
 /* Navegador Princial */
 
-header{
+.siteWarp{
+    box-sizing: border-box;
     display: block;
+}
+
+.siteWarp::before{
+    display: none;
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.siteNavbar{
+    margin-bottom: 0px;
     z-index: 1999;
     position: absolute;
     width: 100%;
     padding-bottom: 1.5rem !important;
     padding-top: 1.5rem !important;
+    display: block;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
 }
 
-.container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .navBar{
     display: flex !important;
@@ -484,29 +513,32 @@ h3{
     margin-inline-end: 0px;
 }
 
-@media (min-width: 1200px){
-    .container{
-        max-width: 1140px;
-        
-    } 
+
+
+#cuenta {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 32px;
 }
 
-/* Cuando doy distintas medidas para que el contenido se ajuste de acuerdo al width 
-    el contenido toma como referencia el width mas chico y se setea de acuerdo a esas dimensiones */
+.simply-section {
+	background: rgba(255, 255, 255, 0);
+	margin: 0 40px 0 0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-    /* @media (min-width: 900px){
-    .container{
-        max-width: 860px;
-        
-    }
-    /* @media (min-width: 660px){
-    .container{
-        max-width: 620px;
-        
-    }
-    /* @media (min-width: 400px){
-    .container{
-        max-width: 360px;
-        
-    }
-} */
+.simply-amount {
+	display: block;
+	font-size: 45px;
+	font-weight:300;
+    margin-bottom: -10px;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 16px;    
+}
+
