@@ -202,11 +202,7 @@ a{
     position: initial;
     z-index: 10;
 }
-.hero2{
-    height: 100vh;
-    min-height: 500px;
-    background-color: #222831;
-}
+
 
 .hero.overlay::before {
     content: "";
