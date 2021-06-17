@@ -101,7 +101,7 @@ html{
 }
 
 .logoLink:hover{
-    color: #fd680e;
+    color: #ff3b00;
 }
 
 
@@ -212,8 +212,6 @@ a{
     z-index: 10;
 }
 
-
-
 .backSticky1{
     height: 178vh;
     width: 1200px;
@@ -270,8 +268,8 @@ p{
     padding-bottom: 1rem!important;
     margin-right: 1rem!important;
     color: #fff;
-    background-color: #fd680e;
-    border-color: #fd680e;
+    background-color: #ff3b00;
+    border-color: #ff3b00;
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -357,7 +355,7 @@ p{
 }
 
 .teamVs{
-    background-color: #fd680e;
+    background-color: #ff3b00;
     overflow: hidden;
     border-radius: 10px;
     margin-top: -90px;
@@ -374,18 +372,10 @@ p{
 }
 
 .flecha{
-    max-width: 56px;
-    max-height: 56px;
+    max-width: 72px;
+    max-height: 72px;
     margin-right: -30px;
-    
 }
-.flecha2{
-    max-width: 56px;
-    max-height: 56px;
-    transform: rotate(180deg);
-}
-
-
 
 .team1{
     padding: 30px;
@@ -481,7 +471,7 @@ h3{
     top: 0;
     left: 0;
     bottom: 0;
-    background: #fd680e;
+    background: #ff3b00;
 }
 
 .titular1{
@@ -502,7 +492,7 @@ h3{
     top: 0;
     left: 0;
     bottom: 0;
-    background: #fd680e;
+    background: #ff3b00;
 }
 
 .row1{
@@ -542,17 +532,44 @@ h3{
     position: absolute;
 }
 .flecha12{
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 100px;
+    max-height: 100px;
     margin-right: -30px;
     margin-top: 0;
     margin-bottom: 0;
-    
+}
+.flecha12::before{
+    background-image: linear-gradient(-180deg, #A1DEFF 0%, #5EA3DB 97%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    transition: all .2s;
+    transition-delay: .2s;
+    transform: translateY(0px) translateX(0px);
+    width: 100%;
+    z-index: -1;
+}
+
+.flecha12:hover, .flecha:hover{
+    animation-name: hoverPop;
+    animation-duration: .4s;
+    cursor: pointer;
+}
+@keyframes hoverPop {
+    0%, 100% {
+    transform: scale(1);
+    }
+    33% {
+    transform: scale(1.25);
+    }
+    66% {
+    transform: scale(.80);
+    }
 }
 .flecha13{
     max-width: 75px;
     max-height: 75px;
-    transform: rotate(180deg);
+    margin-right: -30px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -602,7 +619,7 @@ h3{
 }
 
 .textoNoticia:hover{
-    background: #8f4517b2;
+    background: #ff3c0050;
 }
 
 .tituloNoticia{
