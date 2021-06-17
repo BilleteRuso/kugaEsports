@@ -551,10 +551,19 @@ h3{
     padding-bottom: 30px;
     padding-right: 200px;
     text-align: right;
-    z-index: 100000;
     background-color: #fd6a0e00;
-    transform: translate(0px, -28vh);
+    transform: translate(-1vh, -28vh);
 }
+
+.fan{
+    height: 55.7vh;
+    background-color: #fd6a0e00;
+    position: absolute;
+    width: 100%;
+    z-index: 100000000;
+}
+
+
 
 .noticiaAnterior{
     padding-right: 0;
